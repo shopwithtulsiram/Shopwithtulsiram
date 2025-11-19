@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin - ShopWithTulsiram</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand"><a href="index.html">ShopWithTulsiram</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container admin-container">
+    <section id="login-section" class="card">
+      <h2>Admin Login</h2>
+      <p>Enter admin password to access dashboard.</p>
+      <input id="admin-pass" type="password" placeholder="Password" />
+      <button id="login-btn" class="btn">Login</button>
+      <p class="muted">Default password: <strong>admin123</strong></p>
+    </section>
+
+    <section id="dashboard" class="card hidden">
+      <h2>Admin Dashboard</h2>
+      <div class="flex-row">
+        <div style="flex:1">
+          <h3>Add Product</h3>
+          <input id="p-name" placeholder="Product name" />
+          <input id="p-img" placeholder="Image URL" />
+          <textarea id="p-desc" placeholder="Short description"></textarea>
+          <button id="add-product" class="btn">Add Product</button>
+        </div>
+        <div style="flex:1">
+          <h3>Products</h3>
+          <table id="products-table">
+            <thead><tr><th>Name</th><th>Actions</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+      <button id="logout" class="btn ghost">Logout</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 ShopWithTulsiram</p></div>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

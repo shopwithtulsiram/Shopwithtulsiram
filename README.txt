@@ -1,0 +1,1 @@
+Upload these files to a public GitHub repository named 'shopwithtulsiram'. Ensure index.html is at root. Then enable GitHub Pages from Settings -> Pages.
